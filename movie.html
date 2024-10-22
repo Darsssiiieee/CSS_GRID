@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>CSS_Gridbox | Movie</title>
+		<style>
+			.layout-header {
+				background-color:rgb(92, 28, 112);
+				color: white;
+				padding: 10px 15px;
+				text-align: center;
+			}
+
+			.container {
+				width: 100%;
+				margin-top: 20px;
+				height: 50vh;
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+				grid-gap: 50px;
+			}
+
+			.movie {
+				border: 2px solid #333;
+				padding: 10px;
+				width: 200px;
+				border-radius: 20px;
+				text-align: center;
+			}
+			.movie .name{
+				font: normal 36px 'Cookie', cursive;
+				background-color: rgb(211, 125, 237);
+				font-size: 30px;
+				font-weight: bold;
+				text-align: center;
+			}
+			.info {
+				text-align: left;
+			}
+			.layout-footer {
+				background-color:rgb(92, 28, 112);
+				color: white;
+				text-align: center;
+				padding: 10px 15px;
+				margin-top: 8em;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header class="layout-header">
+			<h1 class="base-heading">CSS_Gridbox | Movie</h1>
+		</header>
+		<div class="container">
+			<div class="movie">
+				<img src="https://via.placeholder.com/150" alt="Movie Image" />
+				<div class="name">Movie Title</div>
+				<p class="info">Director Name:</p>
+				<p class="info">Movie Category:</p>
+				<p class="info">Movie Series: 1</p>
+				<button class="button">View Description</button>
+			</div>
+			<div class="movie">
+				<img src="https://via.placeholder.com/150" alt="Movie Image" />
+				<div class="name">Movie Title</div>
+				<p class="info">Director Name:</p>
+				<p class="info">Movie Category:</p>
+				<p class="info">Movie Series: 1</p>
+				<button class="button">View Description</button>
+			</div>
+			<div class="movie">
+				<img src="https://via.placeholder.com/150" alt="Movie Image" />
+				<div class="name">Movie Title</div>
+				<p class="info">Director Name:</p>
+				<p class="info">Movie Category:</p>
+				<p class="info">Movie Series: 1</p>
+				<button class="button">View Description</button>
+			</div>
+		</div>
+		<footer class="layout-footer">
+			<p>© 2023 Simple Webpage. All rights reserved.</p>
+		</footer>	
+	</body>
+</html>

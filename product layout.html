@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>CSS_Gridbox | Product Layout</title>
+		<style>
+			.layout-header {
+				background-color:rgb(92, 28, 112);
+				color: white;
+				padding: 10px 15px;
+				text-align: center;
+			}
+
+			.container {
+				width: 100%;
+				margin-top: 20px;
+				height: 50vh;
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+				grid-gap: 50px;
+			}
+
+			.product {
+				border: 2px solid #333;
+				padding: 10px;
+				width: 200px;
+				border-radius: 20px;
+				text-align: center;
+			}
+			.product .name{
+				font: normal 36px 'Cookie', cursive;
+				background-color: rgb(211, 125, 237);
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
+			.info {
+				text-align: left;
+			}
+			.layout-footer {
+				background-color:rgb(92, 28, 112);
+				color: white;
+				text-align: center;
+				padding: 10px 15px;
+				margin-top: 8em;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header class="layout-header">
+			<h1 class="base-heading">CSS_Gridbox | Product Layout</h1>
+		</header>
+		<div class="container">
+			<div class="product">
+				<img src="https://via.placeholder.com/150" alt="Product Image" />
+				<div class="name">Product Name</div>
+				<p class="info">Product Description:</p>
+				<p class="info">Price: $ 99.99</p>
+				<button class="button">Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="https://via.placeholder.com/150" alt="Product Image" />
+				<div class="name">Product Name</div>
+				<p class="info">Product Description:</p>
+				<p class="info">Price: $ 99.99</p>
+				<button class="button">Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="https://via.placeholder.com/150" alt="Product Image" />
+				<div class="name">Product Name</div>
+				<p class="info">Product Description:</p>
+				<p class="info">Price: $ 99.99</p>
+				<button class="button">Add to Cart</button>
+			</div>
+		</div>
+		<footer class="layout-footer">
+			<p>© 2023 Simple Webpage. All rights reserved.</p>
+		</footer>	
+	</body>
+</html>
